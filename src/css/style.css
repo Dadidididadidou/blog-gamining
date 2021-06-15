@@ -1,0 +1,401 @@
+/* 
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+*/
+.bg{
+    background-color: #FF0036;
+}
+
+.bgWhite{
+    background-color: #e6e6e6;
+}
+
+/* header */
+header{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 28%;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #F5F2F2;
+    padding: 2rem 1rem;
+}
+
+header nav ul li:hover,
+header nav ul li a:hover{
+    text-decoration: none;
+    color: #303030;
+    padding: 2rem 1rem;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/* NEWS */
+
+#news{
+    margin-top: 3rem;
+}
+
+#news .newsTitre{
+    color: #F5F2F2;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1px #FF0036;
+}
+
+.contenuNews{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.miniVignette{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.v1{
+    background: url(../../src/img/article/The-Last-of-Us-Part.jpg) center center/cover;
+    height: 50vh;
+    flex: 1;
+}
+
+.vignette{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.v2{
+    background: url(../../src/img/article/returnal.jpg) center center/cover;
+    height: 25vh;
+}
+
+.v3{
+    background: url(../../src/img/article/animal-crossing.jpg) center center/cover;
+    height: 25vh;
+}
+
+.newsCategorie{
+    background-color: #F5F2F2;
+    color: #303030;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    width: 8rem;
+    text-align: center;
+}
+
+/* MORE NEWS */
+.moreNews{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.moreNews-row-item {
+    flex: 1 1 30%; /*grow | shrink | basis */
+    padding: 1rem;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    padding: 2rem;
+}
+
+footer img{
+    display: block;
+    margin: 0 auto 1.3rem auto;
+    width: 15%;
+}
+
+
+footer a,
+footer p{
+    text-decoration: none;
+    color: #F5F2F2;
+}
+
+/* ENREGISTRER USER */
+.login{
+    display: table;
+    margin: 5rem auto;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 27%);
+}
+.login table td{
+    padding: 0.5rem;
+    font-size: 1.3rem;
+
+}
+
+.login input{
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-size: 1.3rem;
+}
+
+.login input[type=file]::-webkit-file-upload-button {
+    border: 1px solid yellow;
+    background: #FF0036;
+    font-size: 1.3rem;
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+    width: 50%;
+    border-radius: 3px;
+    box-shadow: 0px 10px 13px -7px black, 1px 2px 3px 3px rgba(0,0,0,0);
+    cursor: pointer;
+
+}
+
+.login input[type=submit]{
+    background: #FF0036;
+    box-shadow: 0px 10px 13px -7px #000000, 1px 2px 3px 3px rgba(0,0,0,0);
+    border: 1px solid yellow;
+    cursor: pointer;
+}
+
+.login input[type=submit]:hover{
+    animation: change 3s infinite;
+    color: white; 
+    -webkit-text-stroke: 1px black;
+}
+
+.registerOk{
+    text-align: center;
+    padding: 12rem;
+}
+
+/* Animation couleur bouton */
+
+@keyframes change {
+    0%{ background-color: #FF0036;}
+    33%{ background-color: black;}
+    66%{ background-color: yellow;}
+    100%{ background-color: #FF0036;}
+}
+
+/* ACCOUNT */
+#account{
+    padding: 5rem;
+}
+
+.account{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 27%);
+}
+
+.infosMembre{
+    flex: 1;
+    border-right: 1px solid black;
+    padding-top: 3rem;
+}
+
+.infosMembre img{
+    width: 100%;
+    box-shadow: 5px 5px 6px 2px rgba(0,0,0,0.8);}
+
+.contenuMembre{
+    text-align: center;
+    flex: 3;
+}
+
+/* ADMIN */
+.gestionAdmin .template{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 27%);
+}
+
+/* MENU ADMIN */
+
+.gestionAdmin .template .menu{
+    display: flex;
+    flex-direction: column;
+}
+.gestionAdmin .template .menu a{
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: #FF0036;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 6px 2px rgba(0,0,0,0.8);
+}
+
+.gestionAdmin .template .menu a:hover{
+    animation: change 3s infinite;
+    color: white; 
+    -webkit-text-stroke: 1px black;
+}
+
+/* ADMIN GESTION CATEGORIE */
+.adminContenu{
+    width: 100%;
+    text-align: center;
+}
+.gestionAdmin .adminContenu table{
+    border: 1px solid black;
+    width: 100%;
+}
+
+.gestionAdmin .adminContenu table tbody tr td{
+    padding: 0.5rem;
+}
+
+.gestionCategorie{
+    width: 80%;
+    margin: auto;
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.gestionCategorie div{
+    width: 100%;
+}
+
+/* ACCOUNT */
+
+#account{
+    padding: 5rem;
+}
+
+.account{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 27%);
+}
+
+.infosMembre{
+    flex: 1;
+    border-right: 1px solid black;
+    padding-top: 3rem;
+}
+
+.infosMembre img{
+    width: 100%;
+    box-shadow: 5px 5px 6px 2px rgba(0,0,0,0.8);
+}
+
+.contenuMembre{
+    text-align: center;
+    flex: 3;
+}
+
+/* ADMIN */
+
+.gestionAdmin .template{
+
+    width: 80%;
+
+    display: flex;
+
+    margin: auto;
+
+    background-color: white;
+
+    box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 27%);
+
+}
+
+
+
+/* MENU ADMIN */
+
+
+
+.gestionAdmin .template .menu{
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.gestionAdmin .template .menu a{
+
+    text-decoration: none;
+
+    padding: 1rem;
+
+    border: 1px solid black;
+
+    background-color: #FF0036;
+
+    color: white;
+
+    text-align: center;
+
+    margin-bottom: 1rem;
+
+    box-shadow: 5px 5px 6px 2px rgba(0,0,0,0.8);
+
+}
+
+
+
+.gestionAdmin .template .menu a:hover{
+
+    animation: change 3s infinite;
+
+    color: white; 
+
+    -webkit-text-stroke: 1px black;
+
+}
+
+
+
+/* ADMIN GESTION CATEGORIE */
+
+.adminContenu{
+    width: 100%;
+    text-align: center;
+}
+
+.gestionAdmin .adminContenu table{
+    border: 1px solid black;
+    width: 100%;
+}
+
+.gestionAdmin .adminContenu table tbody tr td{
+    padding: 0.5rem;
+}
+
+.gestionCategorie{
+    width: 80%;
+    margin: auto;
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: space-between;
+
+}
+
+.gestionCategorie div{
+    width: 100%;
+}

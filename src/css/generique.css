@@ -1,0 +1,130 @@
+/* Normalise */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F2F2;
+    font-family: 'Poppins', sans-serif; 
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+/* COULEUR TEXTE */
+.tc-r a{
+    color: #FF0036;
+}
+
+.tc-g a{
+    color: green;
+}
+
+.tc-o a{
+    color: orange;
+}
+
+
+/* Text-align */
+.ta-c{
+    text-align: center;
+}
+
+/* PADDING */
+.p-1{
+    padding: 1rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-3{
+    padding: 3rem;
+}
+.p-4{
+    padding: 4rem;
+}
+.p-5{
+    padding: 5rem;
+}
+
+/* Margin AUTO */
+.mlr-a{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* MARGIN LEFT */
+.ml-1{
+    margin-left: 1rem;
+}
+
+.ml-2{
+    margin-left: 2rem;
+}
+
+.ml-3{
+    margin-left: 3rem;
+}
+
+.ml-4{
+    margin-left: 4rem;
+}
+
+.ml-5{
+    margin-left: 5rem;
+}
+
+.ml-9{
+    margin-left: 9rem;
+}
+
+/* MARGIN TOP */
+.mt-1{
+    margin-top: 1rem;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+.mt-3{
+    margin-top: 3rem;
+}
+
+.mt-4{
+    margin-top: 4rem;
+}
+
+.mt-5{
+    margin-top: 5rem;
+}
+
+/* MARGIN BOTTOM */
+.mb-1{
+    margin-bottom: 1rem;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+.mb-3{
+    margin-bottom: 3rem;
+}
+
+.mb-4{
+    margin-bottom: 4rem;
+}
+
+.mb-5{
+    margin-bottom: 5rem;
+}
+
+/* TEXTE STROKE */
+
+.tstRed{
+    -webkit-text-stroke: 1px #FF0036;
+}
